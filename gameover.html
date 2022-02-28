@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="monStyle.css" rel="stylesheet">
+
+    <title>Poke Shifumi</title>
+</head>
+
+<body>
+    
+   <div style="background-color: white;border-radius:25px;margin:  2% 15% 2% 15%;">
+        <button onclick="retour()">Retour</button>
+        <h2 id="gagne" style="display: none;">C'est gagné</h2>
+        <h2 id="perdu" style="display: none;">C'est perdu</h2>
+        <h2>Vos points</h2><h2 id="vosPoints"></h2><br>
+        <h2>Points ordinateur</h2><h2 id="pointsOrdi"></h2>
+   </div>
+
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script>
+        var vosPoints = Number(sessionStorage.getItem('vosPoints'));
+        var pointsOrdi = Number(sessionStorage.getItem('pointsOrdi'));
+
+        if(vosPoints > pointsOrdi){
+            $("#gagne").show();
+        }
+        else if(pointsOrdi > vosPoints){
+            $("#perdu").show();
+        }
+
+        $("#vosPoints").text(vosPoints);
+        $("#pointsOrdi").text(pointsOrdi);
+
+        function retour(){
+            window.location.replace("./index.html");
+        }
+
+    </script>
+
+</body>
+
+</html>

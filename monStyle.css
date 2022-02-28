@@ -1,0 +1,121 @@
+@font-face {
+    font-family: pokemon;
+    src: url(font/Pokemon\ Solid.ttf);
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  img:hover{
+    animation: shake 0.5s;
+  }
+
+* {
+    box-sizing: border-box;
+}
+html {
+    overflow-y:scroll;
+}
+body {
+    box-sizing: border-box;
+    background-image: url(./img/fond.jpg);
+}
+
+#carousel {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 160px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(#0787b6, #ffffff);
+}
+
+#carouselBis {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    height: 160px;
+    background-color: white;
+    background-image: url(./img/herbes.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 150px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+nav {
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #1b90bb;
+    border: 4px solid white;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: larger;
+}
+button:hover{
+    background: linear-gradient(red, #ffffff);
+    color: black;
+
+}
+#entete {
+    font-family: 'pokemon', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: red;
+    border-radius: 10px 10px 10px 10px;
+}
+h2{
+    font-family: 'pokemon', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px 10px 10px 10px;
+}
+h4{
+    font-family: 'pokemon', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+table{
+    font-family: 'pokemon', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 20px;
+    width: 100px;
+}
+#zoneAdv{
+    height: 250px;
+    display: flex;
+    background-color: rgb(81,167,118);
+    border-radius: 50%;
+}
+#regle{
+    font-family: 'pokemon', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    padding: 10px;;
+    color: black;
+    font-size: medium;
+    display: flex;
+    border-radius: 10px 10px 10px 10px;
+}
