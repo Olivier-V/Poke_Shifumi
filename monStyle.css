@@ -2,29 +2,65 @@
     font-family: pokemon;
     src: url(font/Pokemon\ Solid.ttf);
 }
+
 @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
-  img:hover{
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+img:hover {
     animation: shake 0.5s;
-  }
+}
 
 * {
     box-sizing: border-box;
 }
+
 html {
-    overflow-y:scroll;
+    overflow-y: scroll;
 }
+
 body {
     box-sizing: border-box;
     background-image: url(./img/fond.jpg);
@@ -72,11 +108,13 @@ button {
     color: white;
     font-size: larger;
 }
-button:hover{
+
+button:hover {
     background: linear-gradient(red, #ffffff);
     color: black;
 
 }
+
 #entete {
     font-family: 'pokemon', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: larger;
@@ -86,7 +124,8 @@ button:hover{
     background-color: red;
     border-radius: 10px 10px 10px 10px;
 }
-h2{
+
+h2 {
     font-family: 'pokemon', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: xx-large;
     color: red;
@@ -94,26 +133,31 @@ h2{
     text-transform: uppercase;
     border-radius: 10px 10px 10px 10px;
 }
-h4{
+
+h4 {
     font-family: 'pokemon', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
 }
-table{
+
+table {
     font-family: 'pokemon', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     margin: 20px;
     width: 100px;
 }
-#zoneAdv{
+
+#zoneAdv {
     height: 250px;
     display: flex;
-    background-color: rgb(81,167,118);
+    background-color: rgb(81, 167, 118);
     border-radius: 50%;
 }
-#regle{
+
+#regle {
     font-family: 'pokemon', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: white;
-    padding: 10px;;
+    padding: 10px;
+    ;
     color: black;
     font-size: medium;
     display: flex;

@@ -12,45 +12,48 @@
 <body>
 
     <div>
-        <p id="entete">Cliquez sur la pokéball de votre choix</p>  
+        <p id="entete">Cliquez sur la pokéball de votre choix</p>
     </div>
     <div id="regle">
-        <p >Ce jeu s'inspire du traditionnel Pierre Papier Ciseaux. Un pokemon feu bat un pokemon plante qui bat un pokemon eau qui bat un pokemon feu...</p>
+        <p>Ce jeu s'inspire du traditionnel Pierre Papier Ciseaux. Un pokemon feu bat un pokemon plante qui bat un
+            pokemon eau qui bat un pokemon feu...</p>
         <p>Une victoire = 10 points, une égalité = 5 points, une défaite = 0</p>
         <p>Le premier concurent à atteindre les 121 points à gangné !</p>
         <img src="./img/circle.jpg">
-        
+
     </div>
 
     <div id="carousel">
         <div class="boite">
             <a href="#carousel">
-            <div><img id="pkbbulbi" onClick="masquerbubli()" src="./img/pokeball.png" alt="pokeball"></div>
-            <div id="bulbi" style="display:none;"><img src="./img/bulbi.png" alt="bulbizarre"></div>
+                <div><img id="pkbbulbi" onClick="masquerbubli()" src="./img/pokeball.png" alt="pokeball"></div>
+                <div id="bulbi" style="display:none;"><img src="./img/bulbi.png" alt="bulbizarre"></div>
             </a>
         </div>
         <div class="boite">
             <a href="#carousel">
-            <div><img id="pkbsala" onClick="masquersala()" src="./img/pokeball.png" alt="pokeball" href="#carousel"></div>
-            <div id="sala" style="display:none;"><img src="./img/sala.png" alt="salameche"></div>
+                <div><img id="pkbsala" onClick="masquersala()" src="./img/pokeball.png" alt="pokeball" href="#carousel">
+                </div>
+                <div id="sala" style="display:none;"><img src="./img/sala.png" alt="salameche"></div>
             </a>
         </div>
         <div class="boite">
             <a href="#carousel">
-            <div><img id="pkbcara" onClick="masquercara()" src="./img/pokeball.png" alt="pokeball" href="#carousel"></div>
-            <div id="cara" style="display:none;"><img src="./img/cara.png" alt="carapuce"></div>
+                <div><img id="pkbcara" onClick="masquercara()" src="./img/pokeball.png" alt="pokeball" href="#carousel">
+                </div>
+                <div id="cara" style="display:none;"><img src="./img/cara.png" alt="carapuce"></div>
             </a>
         </div>
     </div>
-    <div id="carouselBis" ></div>
+    <div id="carouselBis"></div>
     <nav>
         <button id="btn1">Bulbizarre</button>
         <button id="btn2">Salamèche</button>
         <button id="btn3">Carapuce</button>
     </nav>
 
-   
-    <div id="zoneAdv" >
+
+    <div id="zoneAdv">
         <div id="result" style="background-image:url(./img/arene.jpg);background-size:100%;;width: 60%;">
             <h2 id="gagne" style="display: none;">C'est gagné !</h2>
             <h2 id="perd" style="display: none;">C'est perdu !</h2>
@@ -75,10 +78,10 @@
             </table>
         </div>
         <div style="padding: 50px;margin-left: 100px;margin-top: 45px;">
-           <button onclick="window.location.reload();">RESET</button>
+            <button onclick="window.location.reload();">RESET</button>
         </div>
     </div>
-   
+
 
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./monscript.js"></script>
